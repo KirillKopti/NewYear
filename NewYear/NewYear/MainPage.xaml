@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewYear.MainPage">
+
+    <StackLayout>
+        <Entry x:Name="tel_nr_email" Placeholder="Написать сюда номер телефона"></Entry>
+        <Entry x:Name="text" Placeholder="Написать текст сюда"></Entry>
+        <Button x:Name="sms_btn" Text="Написать смс другу" Clicked="sms_btn_Clicked"></Button>
+        <Button x:Name="call_btn" Text="Позвонить другу" Clicked="call_btn_Clicked"></Button>
+        <Button x:Name="mail_btn" Text="Написать письмо другу" Clicked="mail_btn_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>
