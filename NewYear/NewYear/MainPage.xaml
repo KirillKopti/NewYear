@@ -9,6 +9,26 @@
         <Button x:Name="sms_btn" Text="Написать смс другу" Clicked="sms_btn_Clicked"></Button>
         <Button x:Name="call_btn" Text="Позвонить другу" Clicked="call_btn_Clicked"></Button>
         <Button x:Name="mail_btn" Text="Написать письмо другу" Clicked="mail_btn_Clicked"></Button>
+        <Button x:Name="random_btn" Text="Выбрать случайное сообщение" Clicked="random_btn_Clicked"></Button>
+        <Picker x:Name="picker" SelectedIndexChanged="picker_SelectedIndexChanged">
+            <Picker.Items>
+                <x:String>
+                    С новым годом!
+                </x:String>
+                <x:String>
+                    С рождеством годом!
+                </x:String>
+                <x:String>
+                    С чем-то годом!
+                </x:String>
+                <x:String>
+                    Ну как-то так.. с новым годом!
+                </x:String>
+                <x:String>
+                    С новым 2021 годом!
+                </x:String>
+            </Picker.Items>
+        </Picker>
     </StackLayout>
 
 </ContentPage>

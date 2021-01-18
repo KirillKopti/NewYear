@@ -11,6 +11,7 @@ namespace NewYear
 {
     public partial class MainPage : ContentPage
     {
+        Random rnd;
         public MainPage()
         {
             InitializeComponent();
@@ -42,10 +43,44 @@ namespace NewYear
             }
         }
 
+        private void random_btn_Clicked(object sender, EventArgs e)
+        {
+            rnd = new Random();
+            picker.SelectedIndex = rnd.Next(0, 5);
+        }
 
+        private void picker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            picker.Title = "Путь Джедая " + picker.Items[picker.SelectedIndex];
+            if (picker.SelectedIndex == 0)
+            {
+                text.Text = $"{picker}";
+            }
 
+            if (picker.SelectedIndex == 1)
+            {
+                text.Text = $"{picker}";
+            }
 
+            if (picker.SelectedIndex == 2)
+            {
+                text.Text = $"{picker}";
+            }
 
+            if (picker.SelectedIndex == 3)
+            {
+                text.Text = $"{picker}";
+            }
 
+            if (picker.SelectedIndex == 4)
+            {
+                text.Text = $"{picker}";
+            }
+
+            if (picker.SelectedIndex == 5)
+            {
+                text.Text = $"{picker}";
+            }
+        }
     }
 }
