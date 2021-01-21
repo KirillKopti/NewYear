@@ -81,6 +81,11 @@ namespace NewYear
             {
                 text.Text = $"{picker}";
             }
+
+            if (picker.SelectedIndex == 6)
+            {
+                text.Text = $"{picker}";
+            }
         }
     }
 }
